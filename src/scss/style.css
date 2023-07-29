@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0 0;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.navigation-list {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.navigation-list__items a {
+  position: relative;
+}
+.navigation-list__items a::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #34C635;
+  position: absolute;
+  left: 40%;
+  top: -8px;
+  border-radius: 50%;
+  display: none;
+}
+.navigation-list__items:hover a::before {
+  display: block;
+}
+
+.header-flex__button {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.button-sign-in {
+  padding: 13px 24px;
+  background-color: #292F3A;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.object__wrap {
+  padding-top: 100px;
+}
+
+.banner {
+  position: relative;
+  background-color: #F8FAFC;
+}
+
+.banner-wrap {
+  display: flex;
+  min-height: calc(100vh - 88px);
+}
+
+.banner__text {
+  margin: auto 0;
+  position: relative;
+}
+
+.banner-text__title {
+  line-height: 78px;
+  font-size: 72px;
+  width: 570px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-text__description {
+  color: #7B88A8;
+  font-size: 18px;
+  position: absolute;
+  top: 40%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-text__button {
+  position: absolute;
+  top: 52%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-text__discover {
+  padding: 18px 32px;
+  background-color: #292F3A;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.banner-text__img {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 845px;
+}
+.banner-text__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.banner-text__dot1, .banner-text__dot2 {
+  position: absolute;
+  height: 20%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner-text__dot1 {
+  top: 152px;
+  left: 149px;
+  top: 0;
+  left: 0;
+}
+
+.banner-text__dot2 {
+  bottom: 420px;
+  right: 1042px;
+  bottom: 0;
+  right: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
