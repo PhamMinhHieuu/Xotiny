@@ -116,6 +116,19 @@ h4 {
   top: 52%;
   left: 23%;
   transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.banner-text__button .banner-text__play {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 20px rgba(18, 2, 47, 0.15);
 }
 
 .banner-text__discover {
@@ -141,23 +154,19 @@ h4 {
 
 .banner-text__dot1, .banner-text__dot2 {
   position: absolute;
-  height: 20%;
+  height: 15%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .banner-text__dot1 {
-  top: 152px;
-  left: 149px;
-  top: 0;
-  left: 0;
+  top: 124px;
+  left: 106px;
 }
 
 .banner-text__dot2 {
-  bottom: 420px;
-  right: 1042px;
-  bottom: 0;
-  right: 0;
+  top: 665px;
+  left: 684px;
 }
 
 .container {
