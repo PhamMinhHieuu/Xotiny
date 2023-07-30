@@ -169,6 +169,51 @@ h4 {
   left: 684px;
 }
 
+.second__header {
+  text-align: center;
+}
+
+.second__body {
+  padding-top: 85px;
+  display: flex;
+  gap: 583px;
+}
+
+.header__title {
+  padding-top: 120px;
+  display: inline-block;
+}
+
+.second__body__left {
+  position: relative;
+}
+
+.second__before, .second__after, .second__dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.second__before {
+  position: absolute;
+  top: 175px;
+  left: -38px;
+  z-index: 1;
+}
+
+.second__after {
+  position: absolute;
+  top: 35px;
+  left: 154px;
+}
+
+.second__dot {
+  position: absolute;
+  top: 282px;
+  left: 333px;
+  z-index: -1;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
