@@ -235,7 +235,7 @@ h5 {
 }
 
 .header {
-  background-image: url(./assets/img/BGmain.png);
+  background-image: url(/assets/img/BGmain.png);
 }
 
 .container__extra {

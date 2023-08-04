@@ -1,5 +1,5 @@
 .header {
-    background-image: url(./assets/img/BGmain.png);
+    background-image: url(/assets/img/BGmain.png);
 
 
 }
@@ -7,7 +7,7 @@
 .container__extra {
     max-width: 1920px;
     height: 500px;
-    // background-image: url(./assets/img/BGmain.png);
+    // background-image: url(/assets/img/BGmain.png);
 }
 
 .header-flex-extra {
@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 18px 0;
-   // background-image: url(./assets/img/BGmain.png);
+   // background-image: url(/assets/img/BGmain.png);
 
 }
 
