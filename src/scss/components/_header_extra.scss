@@ -51,7 +51,7 @@
     }
 }
 
-.header-flex__button {
+.button-header {
     display: flex;
     gap: 30px;
     align-items: center;
@@ -76,4 +76,8 @@
     text-align: center;
     color: #7B88A8;
 
+}
+
+.header-flex__button {
+    gap: 30px;align-items: center;
 }
