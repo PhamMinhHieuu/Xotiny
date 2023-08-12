@@ -18,6 +18,9 @@
     line-height: 1.45;
     letter-spacing: -1px;
     padding-bottom: 10px;
+    @media (max-width: 576px) {
+      font-size: 14px;
+    }
   }
   .footer-company__item {
     font-size: 14px;
@@ -27,6 +30,9 @@
     text-transform: uppercase;
     color: #E7E5EA;
     padding-top: 10px;
+    @media (max-width: 576px) {
+      font-size: 12px;
+    }
   }
   .footer-newsletter__title {
     // font-family: "DM Sans";
@@ -70,3 +76,10 @@
     
   }
   
+  .col {
+    @media (max-width: 991px) {
+      --col-xs: 12;
+      --col-lg: 2;
+    }
+   
+  }

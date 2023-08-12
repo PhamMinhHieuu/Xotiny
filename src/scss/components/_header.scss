@@ -6,13 +6,36 @@
    // background-image: url(/assets/img/BGmain.png);
 }
 
-
+.header-bar {
+    display: none;
+    z-index: 99;
+    @media (max-width: 991px) {
+        display: block;
+    }
+}
 
 .navigation-list {
     display: flex;
     list-style-type: none;
     gap: 30px;
 }
+
+.navigation-list--desktop {
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.navigation-list--mobile {
+    display: none;
+    @media (max-width: 991px) {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
 .navigation-list__items {
     a {
         position: relative;
@@ -26,9 +49,7 @@
             top: -8px;
             border-radius: 50%;
             display: none;
-        }
-        
-        
+        }             
     }
     &:hover {
         a {
@@ -43,10 +64,41 @@
     display: flex;
     gap: 30px;
     align-items: center;
+    @media (max-width: 991px) {
+        position: fixed;
+        justify-content: start;
+        background-color: #fff;
+        width: 80%;
+        top: 0;
+        height: 100vh;
+        right: -80%;
+        padding-top: 100px;
+        flex-direction: column;
+        gap: 45px;
+        z-index: 99;
+        transition: all 0.5s ease-out;
+    }
 }
 .button-sign-in {
     padding: 13px 24px;
     background-color: #292F3A;
     color: #fff;
     border-radius: 5px;
+}
+
+.show-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #333;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.show-menu {
+    right: 0%;
+    top: 0;
+    overflow-y: scroll;
 }

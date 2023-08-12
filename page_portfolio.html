@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../pmh_baitest2/src/scss/style.css">
+    <link rel="stylesheet" href="/src/scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,13 +15,13 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="container container__extra">
-                <div class="header-flex-extra">
+            <div class="container">
+                <div class="header-flex">
                     <div class="header-flex__logo">
                         <img src="./assets/img/logo.svg" alt="logo">
                     </div>
                     <div class="header-flex__navigation">
-                        <ul class="navigation-list">
+                        <ul class="navigation-list navigation-list--desktop">
                             <li class="navigation-list__items"><a href="index.html">Home</a></li>
                             <li class="navigation-list__items"><a href="page_shop_single_product.html">Services</a></li>
                             <li class="navigation-list__items"><a href="page_portfolio.html">About</a></li>
@@ -30,20 +30,31 @@
                             <li class="navigation-list__items"><a href="page_single.html">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="header-flex__button d-flex">
+                    <div class="button-header">
+                        <ul class="navigation-list navigation-list--mobile">
+                            <li class="navigation-list__items"><a href="index.html">Home</a></li>
+                            <li class="navigation-list__items"><a href="page_shop_single_product.html">Services</a></li>
+                            <li class="navigation-list__items"><a href="page_portfolio.html">About</a></li>
+                            <li class="navigation-list__items"><a href="page-shop.html">Pages</a></li>
+                            <li class="navigation-list__items"><a href="page_blog.html">Blog</a></li>
+                            <li class="navigation-list__items"><a href="page_single.html">Contact</a></li>
+                        </ul>
                         <div class="button-header__search">
                             <img src="./assets/img/Search.svg" alt="search"></div>
                         <div class="button-header__bag">
                             <img src="./assets/img/Bag 2.svg" alt="bag "></div>
-                        <div class="button-sign-in">Sign in</div>
+                        <div class="button-sign-in">Sign up</div>
+                    </div>
+                    <div class="header-bar">
+                        <!-- <i class="fa-solid fa-bars"></i> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+
+                    
                     </div>
                 </div>
-    
-                <div class="header-title-text">
-                    <h2 class="header-title">Our Latest News</h2>
-                    <p class="header-discription"><span style="color: #2D3958;">HOMEPAGE</span>/Blog</p>
+                <div class="header-overlay">
+
                 </div>
-    
             </div>
         </header>
 
@@ -51,15 +62,15 @@
             <section class="work">
                 <h1 class="work__title">Get inspired by our finest work</h1>
                 <div class="work-wrap d-flex">
-                    <div class="work-col d-flex ">
+                    <div class="work-wrap__col d-flex ">
                         <img src="./assets/img/work 1.png" alt="#">
                         <img src="./assets/img/work 2.png" alt="#">
                     </div>
-                    <div class="work-col d-flex ">
+                    <div class="work-wrap__col d-flex ">
                         <img src="./assets/img/work 3.png" alt="#">
                         <img src="./assets/img/work 4.png" alt="#">
                     </div>
-                    <div class="work-col d-flex">
+                    <div class="work-wrap__col d-flex">
                         <img src="./assets/img/work 5.png" alt="#">
                         <img src="./assets/img/work 6.png" alt="#">
                     </div>
@@ -72,32 +83,32 @@
 
 
             <section class="client">
-                <div class="container container--right">
+                <div class="container ">
                     <div class="client-wrap">
                         <h2 class="client-wrap__title">What our clients are saying about us</h2>
                         <div class="client-wrap__discription">Customer satisfaction is a primary goal for our company</div>
                         <div class="client-flex">
-                            <div class="client-flex__monica">
-                                <img src="./assets/img/monica-smith.png" alt="Monica" class="img">
-                                <h4 class="name">Monica Smith</h4>
-                                <div class="position">Brand & Co</div>
-                                <div class="title">Amazing!!</div>
-                                <div class="discription">Overall experience is awesome!! I'm a visual thinker, 
+                            <div class="client-flex__box">
+                                <img src="./assets/img/monica-smith.png" alt="Monica" class="client-img">
+                                <h4 class="client-name">Monica Smith</h4>
+                                <div class="client-position">Brand & Co</div>
+                                <div class="client-title">Amazing!!</div>
+                                <div class="client-discription">Overall experience is awesome!! I'm a visual thinker, 
                                     and I couldn't function without a studio like this.</div>
                             </div>
-                            <div class="client-flex__vincent">
-                                <img src="./assets/img/vincent-smith.png" alt="Vincent" class="img">
-                                <h4 class="name">Vincent Smith</h4>
-                                <div class="position">Brand & Co</div>
-                                <div class="title">Amazing!!</div>
-                                <div class="discription">Overall experience is awesome!! I'm a visual thinker, 
+                            <div class="client-flex__box">
+                                <img src="./assets/img/vincent-smith.png" alt="Vincent" class="client-img">
+                                <h4 class="client-name">Vincent Smith</h4>
+                                <div class="client-position">Brand & Co</div>
+                                <div class="client-title">Amazing!!</div>
+                                <div class="client-discription">Overall experience is awesome!! I'm a visual thinker, 
                                     and I couldn't function without a studio like this.</div>
-                            </div><div class="client-flex__stella">
-                                <img src="./assets/img/stella-smith.png" alt="Stella" class="img">
-                                <h4 class="name">Stella Smith</h4>
-                                <div class="position">Brand & Co</div>
-                                <div class="title">Amazing!!</div>
-                                <div class="discription">Overall experience is awesome!! I'm a visual thinker, 
+                            </div><div class="client-flex__box">
+                                <img src="./assets/img/stella-smith.png" alt="Stella" class="client-img">
+                                <h4 class="client-name">Stella Smith</h4>
+                                <div class="client-position">Brand & Co</div>
+                                <div class="client-title">Amazing!!</div>
+                                <div class="client-discription">Overall experience is awesome!! I'm a visual thinker, 
                                     and I couldn't function without a studio like this.</div>
                             </div><div class="client-flex__thomas">
                                 <img src="./assets/img/thomas-smith.png" alt="Thomas" class="img__thomas">
@@ -136,18 +147,22 @@
                     <div class="company-wrap">
                         <h2 class="company-wrap__title">We will keep you up to date and give you tips to help you optimise your company</h2>
                     <div class="company-wrap__flex">
-                        <div class="company-flex__box">
-                            <img src="./assets/img/Rectangle 66.png" alt="Image" class="company-box__img">
-                            <h4 class="company-box__title">10 secrets to connect with your audience through your website and blog</h4>
-                            <div class="company-box__discription">It is not the same to write a blog with simple information 
-                                as to write by connecting with your target.</div>
-                            <div class="company-box__icon">
-                                <img src="./assets/img/Time Circle.svg" alt="company-box__picture" >
-                                <div class="company-box__date">May 7, 2022</div>
-                                <img src="./assets/img/Time Circle.svg" alt="company-box__picture" >
-                                <div class="company-box__time">10 min read</div>
-                            </div>
-                        </div>                         
+                        <div class="row">
+                            <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 6; --col-lg: 4">
+                                <div class="company-flex__box">
+                                    <img src="./assets/img/Rectangle 66.png" alt="Image" class="company-box__img">
+                                    <h4 class="company-box__title">10 secrets to connect with your audience through your website and blog</h4>
+                                    <div class="company-box__discription">It is not the same to write a blog with simple information 
+                                        as to write by connecting with your target.</div>
+                                    <div class="company-box__icon">
+                                        <img src="./assets/img/Time Circle.svg" alt="company-box__picture" >
+                                        <div class="company-box__date">May 7, 2022</div>
+                                        <img src="./assets/img/Time Circle.svg" alt="company-box__picture" >
+                                        <div class="company-box__time">10 min read</div>
+                                    </div>
+                                </div> </div>
+                            <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 6 ; --col-lg: 4">
+                                                    
                         <div class="company-flex__box">
                             <img src="./assets/img/Rectangle 67.png" alt="Image" class="company-box__img">
                             <h4 class="company-box__title">Which WordPress should you choose: WordPress.com vs WordPress.org?</h4>
@@ -159,49 +174,54 @@
                                 <img src="./assets/img/Time Circle.svg" alt="company-box__picture" >
                                 <div class="company-box__time">10 min read</div>
                             </div>
-                        </div>
-                        <div class="company-flex__box__extra">
-                            <div class="company-flex__box d-flex">
-                                 <div class="company-wrap__item">
-                                    <h4 class="company-box__title">These web design trends will help inform and 
-                                        inspire what people build for the web</h4>
+                        </div></div>
+                            <div class="col col--flex" style="--col-xs: 12 ; --col-lg: 4">
+                                <div class="company-flex__box__extra">
+                                    <div class="company-flex__box d-flex">
+                                         <div class="company-wrap__item">
+                                            <h4 class="company-box__title">These web design trends will help inform and 
+                                                inspire what people build for the web</h4>
+                                                <div class="company-box__icon">
+                                                    <img src="./assets/img/Time Circle.svg" alt="company-box__picture">
+                                                    <div class="company-box__date">May 7, 2022</div>
+                                                    <img src="./assets/img/Time Circle.svg" alt="company-box__picture">
+                                                    <div class="company-box__time">10 min read</div>
+                                                </div>                                    
+                                        </div>                                
+                                        <img src="./assets/img/company3.png" alt="Image" class="company-box__img">                                                                                                                  
+                                    </div>
+        
+                                    <div class="company-flex__box d-flex">
+                                         <div class="company-wrap__item">
+                                        <h4 class="company-box__title">What are the differences between Google Analytics and Analytics 360</h4>
                                         <div class="company-box__icon">
-                                            <img src="./assets/img/Time Circle.svg" alt="company-box__picture">
+                                            <img src="./assets/img/Time Circle.svg" alt="company-box__picture" >
                                             <div class="company-box__date">May 7, 2022</div>
-                                            <img src="./assets/img/Time Circle.svg" alt="company-box__picture">
-                                            <div class="company-box__time">10 min read</div>
-                                        </div>                                    
-                                </div>                                
-                                <img src="./assets/img/company3.png" alt="Image" class="company-box__img">                                                                                                                  
-                            </div>
+                                            <img src="./assets/img/Time Circle.svg" alt="company-box__picture" >
+                                            <div class="company-box__time">10 min read</div>                                  
+                                        </div>                                                                                    
+                                    </div>
+                                         <img src="./assets/img/company4.png" alt="Image" class="company-box__img"> 
+                                    </div>
+                                    <div class="company-flex__box d-flex">
+                                        <div class="company-wrap__item">
+                                            <h4 class="company-box__title">Niche Coworking: 4 shared workspaces for designers and developers</h4>
+                                            
+                                            <div class="company-box__icon">
+                                                <img src="./assets/img/Time Circle.svg" alt="company-box__picture">
+                                                <div class="company-box__date">May 7, 2022</div>
+                                                <img src="./assets/img/Time Circle.svg" alt="company-box__picture">
+                                                <div class="company-box__time">10 min read</div> 
+                                            </div>                                                      
+                                        </div>
+                                    <img src="./assets/img/company5.png" alt="Image" class="company-box__img">  
+                                    </div>
+                                   
+                                </div></div>
 
-                            <div class="company-flex__box d-flex">
-                                 <div class="company-wrap__item">
-                                <h4 class="company-box__title">What are the differences between Google Analytics and Analytics 360</h4>
-                                <div class="company-box__icon">
-                                    <img src="./assets/img/Time Circle.svg" alt="company-box__picture" >
-                                    <div class="company-box__date">May 7, 2022</div>
-                                    <img src="./assets/img/Time Circle.svg" alt="company-box__picture" >
-                                    <div class="company-box__time">10 min read</div>                                  
-                                </div>                                                                                    
-                            </div>
-                                 <img src="./assets/img/company4.png" alt="Image" class="company-box__img"> 
-                            </div>
-                            <div class="company-flex__box d-flex">
-                                <div class="company-wrap__item">
-                                    <h4 class="company-box__title">Niche Coworking: 4 shared workspaces for designers and developers</h4>
-                                    
-                                    <div class="company-box__icon">
-                                        <img src="./assets/img/Time Circle.svg" alt="company-box__picture">
-                                        <div class="company-box__date">May 7, 2022</div>
-                                        <img src="./assets/img/Time Circle.svg" alt="company-box__picture">
-                                        <div class="company-box__time">10 min read</div> 
-                                    </div>                                                      
-                                </div>
-                            <img src="./assets/img/company5.png" alt="Image" class="company-box__img">  
-                            </div>
-                           
                         </div>
+                        
+                        
                         
                     </div>
 
@@ -213,24 +233,12 @@
         <footer class="page-footer pt-100">
             <div class="container container-footer">
               <div class="row pb-100 d-flex">
-                <div class="col footer-logo" style="--col-xs: 3; --col-lg: 2;">
+                <div class="col footer-logo" style="--col-xs: 3; --col-lg: 2; --col-sm: 3; --col-md: 3;">
                   <a href="#" class="footer-logo__icon d-flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="44" viewBox="0 0 32 44" fill="none">
-                      <g clip-path="url(#clip0_301_6510)">
-                        <path d="M32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 16.2133 3.91006e-07 16.4267 0.0170671 16.64V16H16.0171V32C20.2576 31.9955 24.3229 30.3078 27.3197 27.3077C30.3166 24.3076 32 20.2405 32 16Z" fill="#61DCDF"/>
-                        <path d="M0 17V44H16V32.3071H15.9872C11.8545 32.3071 7.88218 30.7135 4.90207 27.8602C1.92197 25.0069 0.165306 21.1151 0 17Z" fill="#886CFF"/>
-                        <path d="M0 16V16.64C0.165262 20.7693 1.92146 24.6746 4.90077 27.5378C7.88007 30.401 11.8514 32 15.9829 32H16V16H0Z" fill="#F9E492"/>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_301_6510">
-                          <rect width="32" height="44" fill="white"/>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <h4 class="footer-logo__item">Pollock</h4>
+                   <img src="/assets/img/logo2.png" alt="#">
                   </a>
                 </div>
-                <div class="col footer-company"style="--col-xs: 3; --col-lg: 2;">
+                <div class="col footer-company"style="--col-xs: 3; --col-lg: 2;--col-sm: 3; --col-md: 3;">
                   <h4 class="footer-company__title">Company</h4>
                   <p class="footer-company__item">About</p>
                   <p class="footer-company__item">Work</p>
@@ -238,7 +246,7 @@
                   <p class="footer-company__item">Pricing</p>
                   <p class="footer-company__item">Blog</p>
                 </div>
-                <div class="col footer-company"style="--col-xs: 3; --col-lg: 2;">
+                <div class="col footer-company"style="--col-xs: 3; --col-lg: 2;--col-sm: 3; --col-md: 3;">
                   <h4 class="footer-company__title">Services</h4>
                   <p class="footer-company__item">Branding</p>
                   <p class="footer-company__item">Websites</p>
@@ -246,7 +254,7 @@
                   <p class="footer-company__item">Strategy</p>
                   <p class="footer-company__item">Platforms</p>
                 </div>
-                <div class="col footer-company"style="--col-xs: 3; --col-lg: 2;">
+                <div class="col footer-company"style="--col-xs: 3; --col-lg: 2;--col-sm: 3; --col-md: 3;">
                   <h4 class="footer-company__title">Contact</h4>
                   <p class="footer-company__item">Help Desk</p>
                   <p class="footer-company__item">Docs</p>
@@ -259,10 +267,10 @@
                   <p class="footer-newsletter__title">
                     Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
                   </p>
-                  <div class="subcrible__btn subcrible__btn--fs d-flex">
+                  <form class="subcrible__btn subcrible__btn--fs d-flex">
                     <input class=" input subcribe__input subcribe__input--bg " type="text" placeholder="Enter email">
                     <a href="#" class=" button button--purple button--blue-bt">Submit</a>
-                  </div>
+                  </form>
                   <p class="footer-newsletter__title pt-15 ">
                     We hate spam as much as you do. We will never, ever send you such emails. 
                   </p>
@@ -283,6 +291,7 @@
             </div>
         </footer>
     </div>
+    <script src="./js/main.js"></script>
     
 </body>
 </html>
