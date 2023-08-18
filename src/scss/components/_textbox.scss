@@ -1,4 +1,19 @@
-.shop-right__box {
+// .blog-right__box {
+//     padding-left: 19px;
+//     // width: 210px;
+//     height: 48px;
+//     border-radius: 5px;
+//     // border: 1px solid var(--lines-gray-line, #E7E5EA);
+//     background: var(--bgbg-white, #FFF);
+// }
+
+.shop-wrap__devices {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--lines-gray-line, #E7E5EA);
+
+    justify-content: space-between;
+}
+.shop-wrap__box  {
     padding-left: 19px;
     width: 210px;
     height: 48px;
