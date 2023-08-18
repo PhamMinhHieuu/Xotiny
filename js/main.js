@@ -1,3 +1,5 @@
+//responsive ẩn hiện menu trên header
+
 const headerBar=document.querySelector('.header-bar')
 const overlay=document.querySelector('.header-overlay')
 const buttonHeader = document.querySelector('.button-header')
@@ -12,4 +14,24 @@ overlay.addEventListener('click', ()=>{
     buttonHeader.classList.remove('show-menu')
 
 })
+
+
+//làm thanh tăng giảm số lượng
+document.addEventListener("DOMContentLoaded", function () {
+    const quantityInput = document.querySelector(".product-right__number");
+    const quantityField = quantityInput.querySelector(".product-number");
+    const incrementButton = quantityInput.querySelector(".increment");
+    const decrementButton = quantityInput.querySelector(".decrement");
+  
+    incrementButton.addEventListener("click", function () {
+      quantityField.stepUp();
+    });
+  
+    decrementButton.addEventListener("click", function () {
+      if (quantityField.value > quantityField.min) {
+        quantityField.stepDown();
+      }
+    });
+  });
+  
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/scss/style.css">
+    <link rel="stylesheet" href="./src/scss/style/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +43,7 @@
                             <img src="./assets/img/Search.svg" alt="search"></div>
                         <div class="button-header__bag">
                             <img src="./assets/img/Bag 2.svg" alt="bag "></div>
-                        <div class="button-sign-in">Sign up</div>
+                        <div class="button button--blue">Sign up</div>
                     </div>
                     <div class="header-bar">
                         <!-- <i class="fa-solid fa-bars"></i> -->
@@ -55,6 +55,10 @@
                 <div class="header-overlay">
 
                 </div>
+                <div class="header-title-text">
+                    <h2 class="header-title">Our shop</h2>
+                    <p class="header-discription"><span style="color: #2D3958;">HOMEPAGE</span>/ SHOP</p>
+                  </div>
             </div>
         </header>
 
@@ -80,16 +84,24 @@
                                 a way beyond all-day battery.</div>
                             <div class="product-right__discription"> Buy your Samsung Galaxy S22 Phones today at the best price!
                                  <span style="color: #4F77FF;">More info</span></div>  
-                            <div class="product-midle__text">Colors</div>
+                            <div class="product-right__text">Colors</div>
                             <div class="product-right__colors">
                                 <img src="./assets/img/color 1.png" alt="#" class="product-colors-draw">
                                 <img src="./assets/img/color 2.png" alt="#" class="product-colors-draw">
                                 <img src="./assets/img/color 3.png" alt="#" class="product-colors-draw">
 
                             </div>
-                            <div class="subcrible__btn subcrible__btn--fs d-flex">        
-                                <a href="#" class=" button button--purple button--blue-bt">Add to Card</a>
+                            <div class="product-right__input">
+                                <div class="product-right__number">
+                                    <input type="number" min="0" value="1" class="product-number">
+                                    <button class="product-number__button increment">+</button>
+                                    <button class="product-number__button decrement">-</button>
+                                </div>
+                                <div class="subcrible__btn subcrible__btn--fs d-flex">        
+                                    <a href="#" class=" button button--blue button--blue-bt">Add to Card</a>
+                                </div>
                             </div>
+                            
                             <div class="product-right__icon d-flex">
                                 <img src="./assets/img/heart.png" alt="#" class="product-right__icon">
                                 <img src="./assets/img/Line.png" alt="#" class="product-right__icon">
@@ -118,10 +130,10 @@
                 <div class="container">
                     <div class="product-midle__wrap">
                         <div class="product-midle__reviews d-flex">
-                            <div class="product-midle__text">Description</div>
-                            <div class="product-midle__text">Aditional Information</div>
-                            <div class="product-midle__text">Reviews</div>
-                            <div class="product-midle__text">Shipping Rates</div>
+                            <div class="product-right__text active">Description</div>
+                            <div class="product-right__text">Aditional Information</div>
+                            <div class="product-right__text">Reviews</div>
+                            <div class="product-right__text">Shipping Rates</div>
 
                         </div>
 
@@ -145,25 +157,34 @@
                         </div>
 
                         <div class="product-bottom__images d-flex">
-                            <div class="product-img__bottom">
-                                <img src="./assets/img/s22+ 256gb.png" alt="#" class="product-img__picture">
-                                <p class="shop-items__title">S22+ 256GB</p>
-                                <p class="shop-items__price">From $799</p>
+                            <div class="product-bottom__img">
+                                <div class="shop-items">
+                                    <img src="./assets/img/s22+ 256gb.png" alt="#" class="product-img__picture">
+                                    <p class="shop-items__title">S22+ 256GB</p>
+                                    <p class="shop-items__price">From $799</p>
+                                </div>                            
                             </div>
-                            <div class="product-img__bottom">
-                                <img src="./assets/img/z flod 2.png" alt="#" class="product-img__picture">
-                                <p class="shop-items__title">Z Fold 2</p>
-                                <p class="shop-items__price">From $499</p>
+                            <div class="product-bottom__img">
+                                <div class="shop-items">
+                                     <img src="./assets/img/z flod 2.png" alt="#" class="product-img__picture">
+                                     <p class="shop-items__title">Z Fold 2</p>
+                                     <p class="shop-items__price">From $499</p>
+                                </div>
                             </div>
-                            <div class="product-img__bottom">
-                                <img src="./assets/img/tab s7 fe.png" alt="#" class="product-img__picture">
-                                <p class="shop-items__title">Tab S7 FE</p>
-                                <p class="shop-items__price">From $699</p>
+                            <div class="product-bottom__img">
+                               <div class="shop-items">
+                                    <img src="./assets/img/tab s7 fe.png" alt="#" class="product-img__picture">
+                                    <p class="shop-items__title">Tab S7 FE</p>
+                                    <p class="shop-items__price">From $699</p>
+                               </div>
                             </div>
-                            <div class="product-img__bottom">
-                                <img src="./assets/img/s22 ultra.png" alt="#" class="product-img__picture">
-                                <p class="shop-items__title">S22 Ultra</p>
-                                <p class="shop-items__price">From $999</p>
+                            <div class="product-bottom__img">
+                                <div class="shop-items">
+                                    <img src="./assets/img/s22 ultra.png" alt="#" class="product-img__picture">
+                                    <p class="shop-items__title">S22 Ultra</p>
+                                    <p class="shop-items__price">From $999</p>
+                                </div>
+                              
                             </div>
 
 
@@ -173,65 +194,78 @@
                 </div>
             </section>
 
+            <section class="download">
+                <div class="download-wrap ">
+                    <h2 class="download-wrap__title">
+                        Get help, find answers, download drivers, manuals and much more
+                    </h2>
+                    <div class="download-wrap__discription">
+                        Contact us online through chat and get support from an expert
+                    </div>
+                    <a href="#" class="download-wrap__button">CHAT NOW</a>
+                </div>
+
+            </section>
 
 
 
-            <div class="blog-bottom">
-                <div class="bottom__wrap">
+
+            <!-- <div class="blog-bottom">
+                <div class="bottom-wrap">
                     <div class="bottom-wrap__discription">Visit our blog! Follow the developments in 
                         the technology & entrepreneur world</div>
                     <div class="bottom-wrap__title">Subscribe to our 
                         newsletter <span style="color: #34C635;">free</span> and stay updated on the latest developments!</div>
                     <div class="subcrible__box subcrible__btn--fs d-flex">
                         <input class=" input subcribe__input subcribe__input--bg " type="text" placeholder="Enter email">
-                        <a href="#" class=" button button--purple button--blue-bt">Subscribe</a>
+                        <a href="#" class=" button button--blue button--blue-bt">Subscribe</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </main>
 
         <footer class="page-footer pt-100">
-            <div class="container container-footer">
-              <div class="row pb-100 d-flex">
+            <div class="container container--footer">
+              <div class="row d-flex">
                 <div class="col footer-logo" style="--col-xs: 3; --col-lg: 2; --col-sm: 3; --col-md: 3;">
                   <a href="#" class="footer-logo__icon d-flex">
                    <img src="/assets/img/logo2.png" alt="#">
                   </a>
                 </div>
-                <div class="col footer-company"style="--col-xs: 3; --col-lg: 2;--col-sm: 3; --col-md: 3;">
-                  <h4 class="footer-company__title">Company</h4>
-                  <p class="footer-company__item">About</p>
-                  <p class="footer-company__item">Work</p>
-                  <p class="footer-company__item">Careers</p>
-                  <p class="footer-company__item">Pricing</p>
-                  <p class="footer-company__item">Blog</p>
-                </div>
-                <div class="col footer-company"style="--col-xs: 3; --col-lg: 2;--col-sm: 3; --col-md: 3;">
-                  <h4 class="footer-company__title">Services</h4>
-                  <p class="footer-company__item">Branding</p>
-                  <p class="footer-company__item">Websites</p>
-                  <p class="footer-company__item">Development</p>
-                  <p class="footer-company__item">Strategy</p>
-                  <p class="footer-company__item">Platforms</p>
-                </div>
-                <div class="col footer-company"style="--col-xs: 3; --col-lg: 2;--col-sm: 3; --col-md: 3;">
-                  <h4 class="footer-company__title">Contact</h4>
-                  <p class="footer-company__item">Help Desk</p>
-                  <p class="footer-company__item">Docs</p>
-                  <p class="footer-company__item">Open a Ticket</p>
-                  <p class="footer-company__item">Chat</p>
-                  <p class="footer-company__item">Forum</p>
-                </div>
+                <ul class="col footer-box"style="--col-xs: 3; --col-lg: 2;--col-sm: 3; --col-md: 3;">
+                  <h4 class="footer-box__title">Company</h4>
+                  <li><a href="/index.html" class="footer-box__item">About</a></li>
+                  <li><a href="/page-shop.html" class="footer-box__item">Work</a></li>
+                  <li><a href="/page_blog.html" class="footer-box__item">Careers</a></li>
+                  <li><a href="/page_portfolio.html" class="footer-box__item">Pricing</a></li>
+                  <li><a href="/page_shop_single_product.html" class="footer-box__item">Blog</a></li>
+                </ul>
+                <ul class="col footer-box"style="--col-xs: 3; --col-lg: 2;--col-sm: 3; --col-md: 3;">
+                  <h4 class="footer-box__title">Services</h4>
+                  <li><a href="/index.html" class="footer-box__item">Branding</a></li>
+                  <li><a href="/page-shop.html" class="footer-box__item">Websites</a></li>
+                  <li><a href="/page_blog.html" class="footer-box__item">Development</a></li>
+                  <li><a href="/page_portfolio.html" class="footer-box__item">Strategy</a></li>
+                  <li><a href="/page_shop_single_product.html" class="footer-box__item">Platforms</a></li>
+                  </ul>
+                <ul class="col footer-box"style="--col-xs: 3; --col-lg: 2;--col-sm: 3; --col-md: 3;">
+                  <h4 class="footer-box__title">Contact</h4>
+                  <li><a href="/index.html" class="footer-box__item">Help Desk</a></li>
+                  <li><a href="/page-shop.html" class="footer-box__item">Docs</a></li>
+                  <li><a href="/page_blog.html" class="footer-box__item">Open a Ticket</a></li>
+                  <li><a href="/page_portfolio.html" class="footer-box__item">Chat</a></li>
+                  <li><a href="/page_shop_single_product.html" class="footer-box__item">Forum</a></li>
+                  </ul>
                 <div class="col footer-newsletter"style="--col-xs: 12; --col-lg: 4;">
-                  <h4 class="footer-company__title">Newsletter</h4>
-                  <p class="footer-newsletter__title">
+                  <h4 class="footer-newsletter__title">Newsletter</h4>
+                  <p class="footer-newsletter__discription">
                     Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
                   </p>
                   <form class="subcrible__btn subcrible__btn--fs d-flex">
                     <input class=" input subcribe__input subcribe__input--bg " type="text" placeholder="Enter email">
-                    <a href="#" class=" button button--purple button--blue-bt">Submit</a>
+                    <a href="#" class=" button button--blue button--blue-bt ">Submit</a>
                   </form>
-                  <p class="footer-newsletter__title pt-15 ">
+                  <p class="footer-newsletter__discription pt-15 ">
                     We hate spam as much as you do. We will never, ever send you such emails. 
                   </p>
                 </div>

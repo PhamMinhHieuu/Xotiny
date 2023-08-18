@@ -1,4 +1,4 @@
-.container-footer {
+.container--footer {
   padding-top: 100px;
 }
 
@@ -12,7 +12,7 @@
   .footer-logo__item {
     color: #fff;
   }
-  .footer-company__title {
+  .footer-box__title {
     color: #fff;
     font-weight: 400;
     line-height: 1.45;
@@ -22,7 +22,7 @@
       font-size: 14px;
     }
   }
-  .footer-company__item {
+  .footer-box__item {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.7; 
@@ -35,16 +35,31 @@
     }
   }
   .footer-newsletter__title {
-    // font-family: "DM Sans";
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.45;
+    letter-spacing: -1px;
+    padding-bottom: 10px;
+    @media (max-width: 576px) {
+      font-size: 14px;
+    }
+  }
+
+  .footer-newsletter__discription {
+    color: var(--text-text-gray, #E7E5EA);
     font-size: 16px;
     font-weight: 400;
-    color: #E7E5EA;
     line-height: 1.62; /* 162.5% */
-    padding-bottom: 25px;
+    @media (max-width: 576px) {
+      font-size: 14px;
+    }
   }
+
   
   .subcrible__btn--fs {
     justify-content: flex-start;
+    padding-bottom: 15px;
+    padding-top: 25px;
   
   }
   .footer-bottom__content {
@@ -54,6 +69,7 @@
   .footer-border {
     border: 1px solid var(--text-text);
     opacity: 0.3;
+    margin-top: 100px;
   }
   .footer-bottom {
     justify-content: space-between;
@@ -66,9 +82,8 @@
    
   }
 
-
   @media (max-width: 768px) {
-    .footer-company {
+    .footer-box {
       --col-xs: 3;
       --col-lg: 2;
 
@@ -82,4 +97,9 @@
       --col-lg: 2;
     }
    
+  }
+
+  .footer-bottom__img {
+    display: flex;
+    gap: 30px;
   }
