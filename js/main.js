@@ -18,7 +18,7 @@ overlay.addEventListener('click', ()=>{
 
 //làm thanh tăng giảm số lượng
 document.addEventListener("DOMContentLoaded", function () {
-    const quantityInput = document.querySelector(".product-right__number");
+    const quantityInput = document.querySelector(".product-wrap__number");
     const quantityField = quantityInput.querySelector(".product-number");
     const incrementButton = quantityInput.querySelector(".increment");
     const decrementButton = quantityInput.querySelector(".decrement");

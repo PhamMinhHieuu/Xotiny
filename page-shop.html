@@ -20,7 +20,7 @@
             <div class="container">
                 <div class="header-flex">
                     <div class="header-flex__logo">
-                        <img src="./assets/img/logo.svg" alt="logo">
+                            <a href="index.html"><img src="./assets/img/logo.svg" alt="logo" ></a>
                     </div>
                     <div class="header-flex__navigation">
                         <ul class="navigation-list navigation-list--desktop">
@@ -43,7 +43,7 @@
                         </ul>
                         <div class="button-header__search">
                             <img src="./assets/img/Search.svg" alt="search"></div>
-                        <div class="button-header__bag">
+                        <div class="button-header__bag activered">
                             <img src="./assets/img/Bag 2.svg" alt="bag "></div>
                         <div class="button button--blue">Sign up</div>
                     </div>
@@ -68,7 +68,7 @@
             <section class="page-shop">
                 <div class="container">
                     <div class="page-wrap">
-                        <div class="page-shop">
+                        <div class="page-shop__left">
                             <div class="page-shop__category">
                                 <p class="page-shop__title">Category</p>
                                 <img src="./assets/img/icon arrow list.png" alt="#" class="shop-wrap__icons">
@@ -76,54 +76,82 @@
 
                             <div class="page-shop__apps">
                                 <div class="page-app">
-                                    <div class="page-app__checkbox">
-                                        <input type="checkbox">
-                                        <span>App</span>
-                                    </div>
-                                    <div class="page-app__button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <g opacity="0.7">
-                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29289 9.29289C7.65338 8.93241 8.22061 8.90468 8.6129 9.2097L8.70711 9.29289L12 12.585L15.2929 9.29289C15.6534 8.93241 16.2206 8.90468 16.6129 9.2097L16.7071 9.29289C17.0676 9.65338 17.0953 10.2206 16.7903 10.6129L16.7071 10.7071L12.7071 14.7071C12.3466 15.0676 11.7794 15.0953 11.3871 14.7903L11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z" fill="#888682"/>
-                                            </g>
-                                          </svg>
-                                    </div>                                  
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox__input">
+                                        App
+                                        <span class="checkbox__click"></span>
+                                    </label>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g opacity="0.7">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29289 9.29289C7.65338 8.93241 8.22061 8.90468 8.6129 9.2097L8.70711 9.29289L12 12.585L15.2929 9.29289C15.6534 8.93241 16.2206 8.90468 16.6129 9.2097L16.7071 9.29289C17.0676 9.65338 17.0953 10.2206 16.7903 10.6129L16.7071 10.7071L12.7071 14.7071C12.3466 15.0676 11.7794 15.0953 11.3871 14.7903L11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z" fill="#888682"/>
+                                        </g>
+                                      </svg>
+                                                                     
                                 </div>
-                                <div class="page-app">
-                                    <div class="page-app__checkbox">
-                                        <input type="checkbox">
-                                        <span>Audio</span>                                        
-                                    </div>
-                                    <div class="page-app__button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <g opacity="0.7">
-                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29289 9.29289C7.65338 8.93241 8.22061 8.90468 8.6129 9.2097L8.70711 9.29289L12 12.585L15.2929 9.29289C15.6534 8.93241 16.2206 8.90468 16.6129 9.2097L16.7071 9.29289C17.0676 9.65338 17.0953 10.2206 16.7903 10.6129L16.7071 10.7071L12.7071 14.7071C12.3466 15.0676 11.7794 15.0953 11.3871 14.7903L11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z" fill="#888682"/>
-                                            </g>
-                                          </svg>
-                                    </div> 
-                                </div>                                                              
-                                <div class="page-app">
-                                    <div class="page-app__checkbox">
-                                        <input type="checkbox">
-                                        <span>Electronics</span>                                                                           
-                                    </div>
-                                    <div class="page-app__button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <g opacity="0.7">
-                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7071 14.7071C16.3466 15.0676 15.7794 15.0953 15.3871 14.7903L15.2929 14.7071L12 11.415L8.70711 14.7071C8.34662 15.0676 7.77939 15.0953 7.3871 14.7903L7.29289 14.7071C6.93241 14.3466 6.90468 13.7794 7.2097 13.3871L7.29289 13.2929L11.2929 9.29289C11.6534 8.93241 12.2206 8.90468 12.6129 9.2097L12.7071 9.29289L16.7071 13.2929C17.0976 13.6834 17.0976 14.3166 16.7071 14.7071Z" fill="#888682"/>
-                                            </g>
-                                          </svg>
-                                    </div>
-                                </div>    
-                                <div class="page-apps">
-                                    <div class="page-shop__box"><input type="checkbox"><span style="color: #7B88A8;">Accessories</span></div>    
-                                    <div class="page-shop__box"><input type="checkbox"><span style="color: #7B88A8;">Camera</span></div>    
-                                    <div class="page-shop__box"><input type="checkbox"><span style="color: #7B88A8;">Computer</span></div>    
-                                    <div class="page-shop__box"><input type="checkbox"><span style="color: #7B88A8;">Headphone</span></div>    
-                                    <div class="page-shop__box"><input type="checkbox"><span style="color: #7B88A8;">Smartphone</span></div>    
-                                    <div class="page-shop__box"><input type="checkbox"><span style="color: #7B88A8;">TV</span></div>    
-                                    <div class="page-shop__box"><input type="checkbox"><span style="color: #7B88A8;">Video</span></div>
-                                </div>                                 
 
+                                <div class="page-app">
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox__input">
+                                        Audio
+                                        <span class="checkbox__click"></span>
+                                    </label>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g opacity="0.7">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29289 9.29289C7.65338 8.93241 8.22061 8.90468 8.6129 9.2097L8.70711 9.29289L12 12.585L15.2929 9.29289C15.6534 8.93241 16.2206 8.90468 16.6129 9.2097L16.7071 9.29289C17.0676 9.65338 17.0953 10.2206 16.7903 10.6129L16.7071 10.7071L12.7071 14.7071C12.3466 15.0676 11.7794 15.0953 11.3871 14.7903L11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z" fill="#888682"/>
+                                        </g>
+                                    </svg>
+                                       
+                                </div> 
+                                                                                              
+                                <div class="page-app">
+                                   <label class="checkbox">
+                                        <input type="checkbox" class="checkbox__input">
+                                        Electronics
+                                        <span class="checkbox__click"></span>
+                                   </label>
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g opacity="0.7">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7071 14.7071C16.3466 15.0676 15.7794 15.0953 15.3871 14.7903L15.2929 14.7071L12 11.415L8.70711 14.7071C8.34662 15.0676 7.77939 15.0953 7.3871 14.7903L7.29289 14.7071C6.93241 14.3466 6.90468 13.7794 7.2097 13.3871L7.29289 13.2929L11.2929 9.29289C11.6534 8.93241 12.2206 8.90468 12.6129 9.2097L12.7071 9.29289L16.7071 13.2929C17.0976 13.6834 17.0976 14.3166 16.7071 14.7071Z" fill="#888682"/>
+                                        </g>
+                                  </svg>
+                                </div>    
+                                
+                                <label class="checkbox__small">
+                                    <input type="checkbox" class="checkbox__input">
+                                    Accessories
+                                    <span class="checkbox__click"></span>
+                                </label>
+                                <label class="checkbox__small">
+                                    <input type="checkbox" class="checkbox__input">
+                                    Camera
+                                    <span class="checkbox__click"></span>
+                                </label>
+                                <label class="checkbox__small">
+                                    <input type="checkbox" class="checkbox__input">
+                                    Computer
+                                    <span class="checkbox__click"></span>
+                                </label>
+                                <label class="checkbox__small">
+                                    <input type="checkbox" class="checkbox__input">
+                                    Headphone
+                                    <span class="checkbox__click"></span>
+                                </label>
+                                <label class="checkbox__small">
+                                    <input type="checkbox" class="checkbox__input">
+                                    Smartphone
+                                    <span class="checkbox__click"></span>
+                                </label>
+                                <label class="checkbox__small">
+                                    <input type="checkbox" class="checkbox__input">
+                                    TV
+                                    <span class="checkbox__click"></span>
+                                </label>
+                                <label class="checkbox__small">
+                                    <input type="checkbox" class="checkbox__input">
+                                    Video                                
+                                    <span class="checkbox__click"></span>
+                                </label>                            
+                                                            
                             </div>
 
                             <div class="page-shop__brand">
@@ -131,13 +159,37 @@
                                 <img src="./assets/img/icon arrow list.png" alt="#" class="shop-wrap__icons">
                             </div>
 
-                            <div class="page-shop__br">
-                                <div class="page-shop__box"><input type="checkbox"><span style="padding-left: 5px;">Apple</span></div>
-                                <div class="page-shop__box"><input type="checkbox"><span style="padding-left: 5px;">Bose</span></div>
-                                <div class="page-shop__box"><input type="checkbox"><span style="padding-left: 5px;">Dell</span></div>
-                                <div class="page-shop__box"><input type="checkbox"><span style="padding-left: 5px;">LG</span></div>
-                                <div class="page-shop__box"><input type="checkbox"><span style="padding-left: 5px;">Samsung</span></div>
-                                <div class="page-shop__box"><input type="checkbox"><span style="padding-left: 5px;">Sony</span></div>
+                            <div class="page-shop__apps">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input">
+                                    Apple                               
+                                    <span class="checkbox__click"></span>
+                                </label> 
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input">
+                                    Bose                               
+                                    <span class="checkbox__click"></span>
+                                </label> 
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input">
+                                    Dell                                
+                                    <span class="checkbox__click"></span>
+                                </label> 
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input">
+                                    LG                           
+                                    <span class="checkbox__click"></span>
+                                </label> 
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input">
+                                    Samsung                             
+                                    <span class="checkbox__click"></span>
+                                </label> 
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input">
+                                    Sony                              
+                                    <span class="checkbox__click"></span>
+                                </label> 
 
                             </div>
 
@@ -153,7 +205,7 @@
                             <div class="page-shop__line">
                                 <img src="./assets/img/Price Line.png" alt="#" class="page-shop__lines">
                                 <div class="page-shop__cost d-flex">
-                                    <div class="page-shop__price">
+                                    <div class="page-shop__text">
                                         Price: $99 — $1999
                                     </div>
                                     <div class="page-shop__filter">
@@ -180,66 +232,69 @@
 
                             <div class="row">
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 4; --col-lg: 4">
-                                    <div class="shop-right__items">
-                                        <img src="./assets/img/s22 128gb.png" alt="#" class="shop-items__img">
-                                        <p class="shop-items__title">S22 128GB</p>
-                                        <p class="shop-items__price">From $299</p>
+                                    <a href="page_shop_single_product.html">
+                                        <div class="shop-wrap__items">
+                                            <img src="./assets/img/s22 128gb.png" alt="#" class="single-wrap__img">
+                                            <p class="shop-wrap__title">S22 128GB</p>
+                                            <p class="shop-wrap__price">From $299</p>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 4; --col-lg: 4">
+                                    <div class="shop-wrap__items">
+                                        <img src="./assets/img/watch 4.png" alt="#" class="single-wrap__img">
+                                        <p class="shop-wrap__title">Watch 4</p>
+                                        <p class="shop-wrap__price">From $399</p>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 4; --col-lg: 4">
-                                    <div class="shop-right__items">
-                                        <img src="./assets/img/watch 4.png" alt="#" class="shop-items__img">
-                                        <p class="shop-items__title">Watch 4</p>
-                                        <p class="shop-items__price">From $399</p>
+                                    <div class="shop-wrap__items">
+                                        <img src="./assets/img/z flod 2.png" alt="#" class="single-wrap__img">
+                                        <p class="shop-wrap__title">Z Fold 2</p>
+                                        <p class="shop-wrap__price">From $499</p>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 4; --col-lg: 4">
-                                    <div class="shop-right__items">
-                                        <img src="./assets/img/z flod 2.png" alt="#" class="shop-items__img">
-                                        <p class="shop-items__title">Z Fold 2</p>
-                                        <p class="shop-items__price">From $499</p>
+                                    <div class="shop-wrap__items">
+                                        <img src="./assets/img/tab s7 fe.png" alt="#" class="single-wrap__img">
+                                        <p class="shop-wrap__title">Tab S7 FE</p>
+                                        <p class="shop-wrap__price">From $699</p>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 4; --col-lg: 4">
-                                    <div class="shop-right__items">
-                                        <img src="./assets/img/tab s7 fe.png" alt="#" class="shop-items__img">
-                                        <p class="shop-items__title">Tab S7 FE</p>
-                                        <p class="shop-items__price">From $699</p>
+                                    <div class="shop-wrap__items">
+                                        <img src="./assets/img/the freestyle.png" alt="#" class="single-wrap__img">
+                                        <p class="shop-wrap__title">The Freestyle</p>
+                                        <p class="shop-wrap__price">From $899</p>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 4; --col-lg: 4">
-                                    <div class="shop-right__items">
-                                        <img src="./assets/img/the freestyle.png" alt="#" class="shop-items__img">
-                                        <p class="shop-items__title">The Freestyle</p>
-                                        <p class="shop-items__price">From $899</p>
+                                    <div class="shop-wrap__items">
+                                        <img src="./assets/img/neo oled 8k.png" alt="#" class="single-wrap__img">
+                                        <p class="shop-wrap__title">Neo OLED 8K</p>
+                                        <p class="shop-wrap__price">From $2,999</p>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 4; --col-lg: 4">
-                                    <div class="shop-right__items">
-                                        <img src="./assets/img/neo oled 8k.png" alt="#" class="shop-items__img">
-                                        <p class="shop-items__title">Neo OLED 8K</p>
-                                        <p class="shop-items__price">From $2,999</p>
+                                    <div class="shop-wrap__items">
+                                        <img src="./assets/img/s22+ 256gb.png" alt="#" class="single-wrap__img">
+                                        <p class="shop-wrap__title">S22+ 256GB</p>
+                                        <p class="shop-wrap__price">From $799</p>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 4; --col-lg: 4">
-                                    <div class="shop-right__items">
-                                        <img src="./assets/img/s22+ 256gb.png" alt="#" class="shop-items__img">
-                                        <p class="shop-items__title">S22+ 256GB</p>
-                                        <p class="shop-items__price">From $799</p>
+                                    <div class="shop-wrap__items">
+                                        <img src="./assets/img/buds pro.png" alt="#" class="single-wrap__img">
+                                        <p class="shop-wrap__title">Buds Pro</p>
+                                        <p class="shop-wrap__price">From $149</p>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 4; --col-lg: 4">
-                                    <div class="shop-right__items">
-                                        <img src="./assets/img/buds pro.png" alt="#" class="shop-items__img">
-                                        <p class="shop-items__title">Buds Pro</p>
-                                        <p class="shop-items__price">From $149</p>
-                                    </div>
-                                </div>
-                                <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 4; --col-lg: 4">
-                                    <div class="shop-right__items">
-                                        <img src="./assets/img/s22 ultra.png" alt="#" class="shop-items__img">
-                                        <p class="shop-items__title">S22 Ultra</p>
-                                        <p class="shop-items__price">From $999</p>
+                                    <div class="shop-wrap__items">
+                                        <img src="./assets/img/s22 ultra.png" alt="#" class="single-wrap__img">
+                                        <p class="shop-wrap__title">S22 Ultra</p>
+                                        <p class="shop-wrap__price">From $999</p>
                                     </div>
                                 </div>
                             </div>
@@ -323,9 +378,9 @@
                   <p class="footer-newsletter__discription">
                     Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
                   </p>
-                  <form class="subcrible__btn subcrible__btn--fs d-flex">
-                    <input class=" input subcribe__input subcribe__input--bg " type="text" placeholder="Enter email">
-                    <a href="#" class=" button button--blue button--blue-bt ">Submit</a>
+                  <form class="subcrible-btn subcrible-btn--fs d-flex">
+                    <input class=" input subcribe-input subcribe-input--bg " type="text" placeholder="Enter email">
+                   <a href="#" class=" button button--blue button--blue-bt ">Submit</a>
                   </form>
                   <p class="footer-newsletter__discription pt-15 ">
                     We hate spam as much as you do. We will never, ever send you such emails. 

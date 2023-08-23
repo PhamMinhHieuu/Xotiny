@@ -71,6 +71,12 @@
 
 .header-banner__title {
     text-align: center;
+    @media (max-width: 1100px) {
+        font-size: 40px;
+    }
+    @media (max-width: 768px) {
+        font-size: 32px;
+    }
 }
 
 .header-banner__discription {

@@ -1,13 +1,27 @@
 .button {
-    padding: 13px 24px;
-    border-radius: 5px;
-    color: #FFF;
-    font-family: Outfit;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    display: inline-block;
-    text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: #292F3A;
+  }
+
+  .hover {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      scale: 0.8;
+    }
+  }
+
+  position: relative;
+  cursor: pointer;
+  padding: 13px 24px;
+  border-radius: 5px;
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  display: inline-block;
+  text-transform: uppercase;
     @media (max-width: 991px)
     {
       padding: 10px 20px;
@@ -16,7 +30,10 @@
     }
   }
   
-  
+  .button--black {
+    background-color: var(--bgbg-gray);
+  }
+
   .button--blue {
     background-color: var(--action-blue);
   }

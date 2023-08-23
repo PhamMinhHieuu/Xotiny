@@ -64,6 +64,7 @@
     display: flex;
     gap: 30px;
     align-items: center;
+   
     @media (max-width: 991px) {
         position: fixed;
         justify-content: start;
@@ -79,13 +80,29 @@
         transition: all 0.5s ease-out;
     }
 }
+
+.header-flex__logo {
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        scale: 0.9;
+    }
+}
 .button-sign-in {
+    cursor: pointer;
     font-size: 14px;
     text-transform: uppercase;
     padding: 13px 24px;
     background-color: #292F3A;
     color: #fff;
     border-radius: 5px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #4F77FF;
+    }
 }
 
 .show-overlay {
@@ -103,4 +120,23 @@
     right: 0%;
     top: 0;
     overflow-y: scroll;
+}
+
+.button-header__bag {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        scale: 1.2;
+    }
+}
+
+.button-header__search {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        scale: 1.2;
+    }
 }
