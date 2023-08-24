@@ -19,6 +19,8 @@
     margin-right: calc(var(--grid-col-gap-vertical) / -2);
     // margin-top: calc(var(--grid-col-gap-horizontal) * -1);
   }
+
+
   
   .col {
     width: calc(var(--col-xs) / var(--grid) * 100%);
@@ -71,6 +73,5 @@
   
   .col--flex {
     @media (max-width: 1200px) {
-        width: 100%;
     }
 }

@@ -39,6 +39,7 @@
   }
   .button--purple {
     background-color: var(--action-purple);
+
   }
   .button--gray {
     background-color: var(--text-text-gray);
@@ -54,6 +55,7 @@
       // flex-direction: column;
     }
   }
+  
   @media (max-width: 991px){
     .icon-btn {
       flex-direction: column;
@@ -78,4 +80,21 @@
   }
   .button--blue {
     background-color: var(--action-blue);
+  }
+
+  .subcrible-btn {
+    justify-content: flex-start;
+    padding-bottom: 15px;
+    padding-top: 25px;
+    gap: 6px;
+    padding: 10px 0px;
+  }
+
+  .subcribe-input {
+    padding-left: 20px;
+    border-radius: 5px;
+ 
+    border-radius: 5px;
+    border: 1px solid var(--lines-gray-line, #E7E5EA);
+    background: var(--text-text-white, #FFF);
   }

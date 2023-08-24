@@ -118,10 +118,10 @@
 
   .footer-bottom__img {
     cursor: pointer;
-    transform: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
     display: flex;
     gap: 30px;
     &:hover {
-      color: #292F3A;
+      scale: 1.2;
     }
   }
