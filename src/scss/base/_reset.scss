@@ -101,3 +101,45 @@ img {
     display: block;
     max-width: 100%;
 }
+
+.span--green {
+    color: #34C635;
+}
+
+.span--black {
+    color: #2D3958;
+}
+
+.a--purple {
+    color: #4F77FF;
+}
+
+.h2--center {
+    text-align: center;
+}
+
+.blog-wrap--pd {
+    padding: 0px 25px;
+}
+
+.p--pt {
+    padding-top: 30px;
+}
+
+.single-comments--pl {
+    padding-left: 125px;
+}
+
+.img--mh {
+    max-height: 50px;
+}
+.product-wrap--mobile {
+    @media (min-width: 800px) {
+    width: 80%;
+
+    }
+    @media (min-width: 768px) {
+        width: 80%;
+    
+        }
+}
