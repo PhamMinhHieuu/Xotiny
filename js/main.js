@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const incrementButton = quantityInput.querySelector(".increment");
     const decrementButton = quantityInput.querySelector(".decrement");
   
-    incrementButton.addEventListener("click", function () {
+    Button.addEventListener("click", function () {
       quantityField.stepUp();
     });
   
