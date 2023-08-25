@@ -16,7 +16,7 @@ body{
     --grid-col-gap-vertical: 30px;
     --grid-col-gap-horizontal: 30px;
     --text-heading: #2D3958;
-    --text-text :#7B88A8;
+    --text-text :#7B88A8; 
     --action-blue: #4F77FF;
     --bgbg-light :#F8FAFC;
     --text-dark-alt: #321370;
@@ -28,6 +28,7 @@ body{
     --bgbg-gray: #292F3A;
     --bgbg-gray: #292F3A;
     --text-text-gray:#E7E5EA;
+    
   }
 a {
     text-decoration: none;
@@ -142,4 +143,21 @@ img {
         width: 80%;
     
         }
+}
+
+.section--bg {
+    background-image: url(/assets/img/bg\ product.png);
+    background-size: cover;
+}
+
+.text-box__title--shop {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    color: var(--text-text, #7B88A8);
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: -1px;
+
 }

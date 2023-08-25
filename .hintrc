@@ -8,6 +8,8 @@
       {
         "listitem": "off"
       }
-    ]
+    ],
+    "axe/forms": "off",
+    "no-inline-styles": "off"
   }
 }

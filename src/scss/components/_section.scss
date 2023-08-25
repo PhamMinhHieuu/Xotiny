@@ -13,7 +13,17 @@
     background-size: 44% 100%;
     background-position: right;
 
-   
+}
+
+.text-box__title {
+    // font-size: var(--fz);
+}
+
+.text-box__title--fz {
+    font-size: 64px;
+}
+
+.text-box__description {
 
 }
 
@@ -2041,11 +2051,12 @@ display: flex;
         flex-wrap: wrap;
     }
     @media (max-width: 991px) {
-        justify-content: center;;
+        justify-content: center;
     }
  }
 
  .page-shop {
+    padding-bottom: 100px;
     @media (max-width: 768px) {
     }
     @media (max-width: 991px) {
@@ -2234,8 +2245,6 @@ display: flex;
 .page-app {
     display: flex;
     justify-content: space-between;
-    // flex-direction: column;
-    padding-bottom: 16px;
     color: #333;
     font-size: 14px;
     font-weight: 400;
