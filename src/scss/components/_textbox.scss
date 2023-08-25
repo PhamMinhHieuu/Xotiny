@@ -28,3 +28,32 @@
     background: var(--bgbg-light, #F8FAFC);
     margin-bottom: 30px;
 }
+
+
+.text-box {
+    text-align: center;
+}
+.text-box--size {
+    max-width: 970px;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.text-box__title {
+    padding-bottom: 40px;
+    display: inline-block;
+}
+
+.text-box__description {
+    max-width: 691px;
+    margin: 0 auto;
+    color: #7B88A8;
+    letter-spacing: -0.3px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.text-box__discription--pb {
+    padding-bottom: 75px;
+}

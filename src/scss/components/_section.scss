@@ -1,5 +1,11 @@
 //banner
 
+.section {
+    --pt:100px;
+    --pb:100px;
+    padding-top: var(--pt);
+    padding-bottom: var(--pb);
+}
 
 .section-bg {
     background-image: url(/assets/img/banner1.jpg);
@@ -174,9 +180,6 @@
 
 //section-second
 
-.second-header {
-    text-align: center;
-}
 
 .second-body {
     padding-top: 85px;
@@ -191,21 +194,9 @@
     }
 }
 
-.second-header__title {
-    padding-bottom: 40px;
-    padding-top: 120px;
-    display: inline-block;
-}
 
-.second-header__description {
-    max-width: 691px;
-    margin: 0 auto;
-    color: #7B88A8;
-    letter-spacing: -0.3px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-}
+
+
 
 .second-body__title {
     @media (max-width: 1100px) {
@@ -1366,9 +1357,7 @@
    
 }
 
-.blog--right {
 
-}
 
 .blog--single {
     width: 100%;
@@ -1554,6 +1543,10 @@ display: flex;
     background: var(--bgbg-light, #F8FAFC);
     @media (max-width: 1100px) {
         display: flex;padding-top: 32px;align-items: center;justify-content: center;
+    }
+    @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: unset;
     }
 }
 
@@ -2200,6 +2193,10 @@ display: flex;
 }
 
 .page-app__checkbox {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--text-text, #7B88A8);
     font-family: DM Sans;
     font-size: 14px;
@@ -2480,7 +2477,7 @@ display: flex;
     padding-bottom: 30px;
 
     &:hover {
-        scale: 1.2;
+       transform: scale(1.2);
     }
 }
 
@@ -2509,9 +2506,6 @@ display: flex;
     gap: 25px;
 }
 
-.product-midle {
-    padding-top: 100px;
-}
 
 .product-wrap__draw {
     cursor: pointer;
@@ -2566,6 +2560,7 @@ display: flex;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: DM Sans;
     font-size: 16px;
+    width: 100%;
     font-weight: 400;
     line-height: 1.6; /* 162.5% */
 }
@@ -2576,6 +2571,7 @@ display: flex;
     border-bottom: 1px solid #E7E5EA;
     border-top: 1px solid #E7E5EA;
     padding-bottom: 60px;
+    gap:30px;
     padding-top: 40px;
     @media (max-width: 768px) {
         flex-wrap: wrap;

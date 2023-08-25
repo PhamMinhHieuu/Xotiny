@@ -82,6 +82,11 @@
   .footer-bottom__content {
     color: #E7E5EA;
     font-weight: 400;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: unset;
+      gap: 20px;
+    }
   }
   .footer-border {
     border: 1px solid var(--text-text);
