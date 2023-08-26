@@ -57,3 +57,26 @@
 .text-box__description--pb {
     padding-bottom: 75px;
 }
+
+.single-wrap__actor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+
+.actor-left {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+@media (max-width: 768px) {
+}
